@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WhatsApp Sakupljač Dokaza</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #a5596a; /* Use your preferred color */
+        }
+        button {
+            background-color: #a5596a; /* Use your preferred color */
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px 0;
+            padding: 10px 20px;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #903f5a; /* Darker shade for hover effect */
+        }
+        #status {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>WhatsApp Sakupljač Dokaza</h1>
+        <button id="extract">Preuzmi i Sačuvaj Poruke</button>
+        <button id="verify">Proveri Validnost Poruka</button>
+        <div id="status"></div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

@@ -37,9 +37,9 @@ document.getElementById('verify').addEventListener('click', async () => {
                 body: JSON.stringify({ hash: hash })
             }).then(response => response.json()).then(data => {
                 if (data.status === 'success') {
-                    document.getElementById('status').innerText = 'Validnost uspešna! Fajl nije izmenjen!';
+                    document.getElementById('status').innerText = 'Validnost uspesna! Fajl nije izmenjen!';
                 } else {
-                    document.getElementById('status').innerText = 'Validnost neuspešna! Fajl je izmenjen!';
+                    document.getElementById('status').innerText = 'Validnost neuspesna! Fajl je izmenjen!';
                 }
             }).catch((error) => {
                 console.error('Error verifying hash:', error);
